@@ -8,9 +8,7 @@ A modern and responsive **personal portfolio website** built using **React, Vite
 
 ## 📸 Preview
 
-![Portfolio Preview](./Portfolio UI.png)
-
----
+![Portfolio Preview](./Portfolio%20UI.png)
 
 ## ✨ Features
 
