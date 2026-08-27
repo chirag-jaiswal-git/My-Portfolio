@@ -28,10 +28,10 @@ export const HeroSection = () => {
           </h2>
 
           {/* ---------- DESCRIPTION ---------- */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-delay-3">
             I build modern, scalable web applications using React.js, Node.js,
-            Express.js, and MongoDB — from responsive user interfaces to secure
-            REST APIs, authentication, and real-time features.
+            Express.js, and MongoDB — creating responsive interfaces, secure
+            REST APIs, authentication systems, and real-world solutions.
           </p>
 
           {/* ---------- BUTTONS ---------- */}
@@ -42,7 +42,7 @@ export const HeroSection = () => {
 
             <a
               href="#contact"
-              className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/30 transition-colors duration-300"
+              className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/30 transition-all duration-300"
             >
               Get In Touch
             </a>
@@ -51,11 +51,15 @@ export const HeroSection = () => {
       </div>
 
       {/* ---------- SCROLL INDICATOR ---------- */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <a
+        href="#about"
+        aria-label="Scroll to About section"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce"
+      >
         <span className="text-sm text-muted-foreground mb-2">Scroll down</span>
 
         <ArrowDown className="h-5 w-5 text-primary" />
-      </div>
+      </a>
     </section>
   );
 };
