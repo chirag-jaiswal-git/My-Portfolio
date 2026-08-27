@@ -25,6 +25,8 @@
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socket.io&logoColor=white" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
@@ -39,14 +41,6 @@
 - **[Forever-Ecommerce-WebApp](https://github.com/chirag-jaiswal-git/Forever-Ecommerce-WebApp)** — A production-oriented MERN e-commerce app with secure authentication and a clean API architecture.
 - **[Frontend-projects](https://github.com/chirag-jaiswal-git/Frontend-projects)** — A collection of frontend builds covering responsive UI, DOM manipulation, and API integration.
 
----
-
-### 📊 GitHub Stats
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=chirag-jaiswal-git&show_icons=true&theme=default" alt="GitHub Stats" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=chirag-jaiswal-git" alt="GitHub Streak" height="165"/>
-</p>
 
 ---
 
