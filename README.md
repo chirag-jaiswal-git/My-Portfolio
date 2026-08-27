@@ -1,16 +1,78 @@
-# React + Vite
+# 💼 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Personal portfolio website showcasing my projects, skills, and resume — built with React and Vite.
 
-Currently, two official plugins are available:
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Overview
 
-## React Compiler
+This is my personal developer portfolio, built to showcase who I am, what I've built, and how to reach me. It includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- An **About Me** section with my background and skills
+- A **Projects** section highlighting my work (BookMyTurf, Forever, and more)
+- A downloadable **resume**
+- **Contact** links (LinkedIn, GitHub, email)
 
-## Expanding the ESLint configuration
+## 🖼 Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<!-- Add a screenshot of the live site here -->
+`[screenshot placeholder — add a homepage screenshot]`
+
+## 🔗 Live Demo
+
+`[add your deployed link here, e.g. https://chiragjaiswal.vercel.app]`
+
+## 🛠 Tech Stack
+
+- React
+- Vite
+- ESLint
+- `[add your CSS framework here, e.g. Tailwind CSS, if used]`
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/chirag-jaiswal-git/My-Portfolio.git
+cd My-Portfolio
+
+# Install dependencies
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+The site should now be running at `http://localhost:5173`.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+## 📄 Resume
+
+My resume is included in this repo: [`Chirag_jaiswal_Full_Stack_Dev_resume.pdf`](./Chirag_jaiswal_Full_Stack_Dev_resume.pdf)
+
+## 📄 License
+
+`[Add a license — MIT is a common choice for personal/portfolio projects]`
+
+## 👤 Author
+
+**Chirag Jaiswal**
+[LinkedIn](https://www.linkedin.com/in/chirag-jaiswal18/) · [GitHub](https://github.com/chirag-jaiswal-git)
