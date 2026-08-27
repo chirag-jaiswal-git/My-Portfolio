@@ -1,78 +1,59 @@
-# 💼 My Portfolio
+<h1 align="center">Hi 👋, I'm Chirag Jaiswal</h1>
+<h3 align="center">Aspiring MERN Stack Developer from Indore, India</h3>
 
-> Personal portfolio website showcasing my projects, skills, and resume — built with React and Vite.
-
-<p>
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+<p align="center">
+  I build full-stack web applications with secure authentication, clean APIs,
+  and real-world features like OTP login and booking systems.
 </p>
 
-## ✨ Overview
+<p align="center">
+  <a href="https://www.linkedin.com/in/chirag-jaiswal18/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://leetcode.com/u/chirag-jaiswal/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
+  </a>
+</p>
 
-This is my personal developer portfolio, built to showcase who I am, what I've built, and how to reach me. It includes:
+---
 
-- An **About Me** section with my background and skills
-- A **Projects** section highlighting my work (BookMyTurf, Forever, and more)
-- A downloadable **resume**
-- **Contact** links (LinkedIn, GitHub, email)
+### 🛠️ Tech Stack
 
-## 🖼 Screenshot
+<p align="left">
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+</p>
 
-<!-- Add a screenshot of the live site here -->
-`[screenshot placeholder — add a homepage screenshot]`
+---
 
-## 🔗 Live Demo
+### 🚀 Featured Projects
 
-`[add your deployed link here, e.g. https://chiragjaiswal.vercel.app]`
+- **[My-Portfolio](https://github.com/chirag-jaiswal-git/My-Portfolio)** — My personal portfolio site, built with React, Vite, and Tailwind CSS, with dark/light theme support and animated UI.
+- **[BookMyTurf](https://github.com/chirag-jaiswal-git/BookMyTurf)** — A full-stack MERN sports turf booking platform with secure Email OTP authentication and real-time booking notifications.
+- **[Forever-Ecommerce-WebApp](https://github.com/chirag-jaiswal-git/Forever-Ecommerce-WebApp)** — A production-oriented MERN e-commerce app with secure authentication and a clean API architecture.
+- **[Frontend-projects](https://github.com/chirag-jaiswal-git/Frontend-projects)** — A collection of frontend builds covering responsive UI, DOM manipulation, and API integration.
 
-## 🛠 Tech Stack
+---
 
-- React
-- Vite
-- ESLint
-- `[add your CSS framework here, e.g. Tailwind CSS, if used]`
+### 📊 GitHub Stats
 
-## 🚀 Getting Started
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=chirag-jaiswal-git&show_icons=true&theme=default" alt="GitHub Stats" height="165"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=chirag-jaiswal-git" alt="GitHub Streak" height="165"/>
+</p>
 
-### Prerequisites
+---
 
-- Node.js (v18+)
+### 🤝 Let's Connect
 
-### Installation
+I'm currently deepening my MERN stack skills and looking for opportunities to contribute to real-world projects.
 
-```bash
-# Clone the repo
-git clone https://github.com/chirag-jaiswal-git/My-Portfolio.git
-cd My-Portfolio
-
-# Install dependencies
-npm install
-```
-
-### Run locally
-
-```bash
-npm run dev
-```
-
-The site should now be running at `http://localhost:5173`.
-
-### Build for production
-
-```bash
-npm run build
-```
-
-## 📄 Resume
-
-My resume is included in this repo: [`Chirag_jaiswal_Full_Stack_Dev_resume.pdf`](./Chirag_jaiswal_Full_Stack_Dev_resume.pdf)
-
-## 📄 License
-
-`[Add a license — MIT is a common choice for personal/portfolio projects]`
-
-## 👤 Author
-
-**Chirag Jaiswal**
-[LinkedIn](https://www.linkedin.com/in/chirag-jaiswal18/) · [GitHub](https://github.com/chirag-jaiswal-git)
+<p align="left">
+  <a href="https://www.linkedin.com/in/chirag-jaiswal18/" target="_blank">Connect with me on LinkedIn</a>
+</p>
