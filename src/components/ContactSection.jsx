@@ -173,7 +173,7 @@ export const ContactSection = () => {
             <div>
               <h4 className="font-medium mb-5">Connect With Me</h4>
 
-              <div className="flex gap-4">
+              <div className="flex items-center justify-center gap-4">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
 
