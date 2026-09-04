@@ -1,4 +1,12 @@
-import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+  Code2,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -7,19 +15,21 @@ import { useState } from "react";
 const contactDetails = [
   {
     icon: Mail,
+    title: "Email",
     value: "chiragjaiswal9109@gmail.com",
     href: "mailto:chiragjaiswal9109@gmail.com",
   },
   {
     icon: Phone,
+    title: "Phone",
     value: "+91 9109351437",
     href: "tel:+919109351437",
   },
   {
     icon: MapPin,
+    title: "Location",
     value: "Indore, Madhya Pradesh, India",
   },
-  
 ];
 
 // ---------- Social Links ----------
@@ -27,14 +37,17 @@ const socialLinks = [
   {
     icon: Linkedin,
     href: "https://www.linkedin.com/in/chirag-jaiswal18/",
-    value:"chirag-jaiswal18",
     name: "LinkedIn",
   },
   {
     icon: Github,
     href: "https://github.com/chirag-jaiswal-git",
-    value:"chirag-jaiswal-git",
     name: "GitHub",
+  },
+  {
+    icon: Code2,
+    href: "https://leetcode.com/u/chirag-jaiswal/",
+    name: "LeetCode",
   },
 ];
 
@@ -60,7 +73,7 @@ export const ContactSection = () => {
 
       if (data.success) {
         toast({
-          title: "Message Sent!",
+          title: "Message Sent! 🎉",
           description: "Thank you for reaching out. I'll get back to you soon.",
         });
 
@@ -71,7 +84,8 @@ export const ContactSection = () => {
         toast({
           variant: "destructive",
           title: "Something went wrong.",
-          description: data.message || "There was a problem with your request.",
+          description:
+            data.message || "There was a problem sending your message.",
         });
       }
     } catch (error) {
@@ -90,49 +104,49 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
-        {/* ---------- SECTION TITLE ---------- */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary">Touch</span>
-        </h2>
+        {/* ---------- SECTION HEADER ---------- */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Get In <span className="text-primary">Touch</span>
+          </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
-        </p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Have a project in mind, want to collaborate, or simply want to
+            connect? Feel free to reach out. I'm always open to discussing new
+            opportunities and ideas.
+          </p>
+        </div>
 
-        {/* ---------- MAIN GRID ---------- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          {/* ==================================================
-              LEFT BOX: CONTACT INFORMATION + CONNECT WITH ME
-          ================================================== */}
-          <div className="bg-card p-8 rounded-lg shadow-xs">
+        {/* ---------- MAIN CONTENT ---------- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* ---------- CONTACT INFORMATION ---------- */}
+          <div className="bg-card p-8 rounded-2xl shadow-xs border border-border/50">
             <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
 
-            {/* ---------- Contact Details ---------- */}
-            <div className="space-y-7">
+            <div className="space-y-6">
               {contactDetails.map((detail, index) => {
                 const Icon = detail.icon;
 
                 return (
-                  <div key={index} className="flex items-center space-x-4">
+                  <div key={index} className="flex items-center gap-4">
                     {/* Icon */}
                     <div className="p-3 rounded-full bg-primary/10 text-primary shrink-0">
                       <Icon className="h-5 w-5" />
                     </div>
 
                     {/* Details */}
-                    <div>
-                      <h4 className="font-medium">{detail.title}</h4>
+                    <div className="min-w-0">
+                      <h4 className="font-medium mb-1">{detail.title}</h4>
 
                       {detail.href ? (
                         <a
                           href={detail.href}
-                          className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                          className="text-sm text-muted-foreground hover:text-primary transition-colors break-all"
                         >
                           {detail.value}
                         </a>
                       ) : (
-                        <p className="text-muted-foreground text-sm">
+                        <p className="text-sm text-muted-foreground">
                           {detail.value}
                         </p>
                       )}
@@ -142,14 +156,14 @@ export const ContactSection = () => {
               })}
             </div>
 
-            {/* ---------- Divider ---------- */}
+            {/* ---------- DIVIDER ---------- */}
             <div className="border-t border-border my-8" />
 
-            {/* ---------- Connect With Me ---------- */}
+            {/* ---------- SOCIAL LINKS ---------- */}
             <div>
-              <h4 className="font-medium mb-6">Connect With Me</h4>
+              <h4 className="font-medium mb-5">Connect With Me</h4>
 
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex gap-4">
                 {socialLinks.map((social, index) => {
                   const Icon = social.icon;
 
@@ -159,8 +173,9 @@ export const ContactSection = () => {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={social.name}
-                      className="p-4 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 "
+                      aria-label={`Visit my ${social.name} profile`}
+                      title={social.name}
+                      className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
                     >
                       <Icon className="h-5 w-5" />
                     </a>
@@ -168,16 +183,25 @@ export const ContactSection = () => {
                 })}
               </div>
             </div>
+
+            {/* ---------- AVAILABILITY ---------- */}
+            <div className="mt-8 p-4 rounded-lg bg-primary/5 border border-primary/10">
+              <p className="text-sm text-muted-foreground">
+                <span className="text-primary font-medium">
+                  Open to opportunities
+                </span>{" "}
+                — internships, freelance projects, and full-stack development
+                roles.
+              </p>
+            </div>
           </div>
 
-          {/* ==================================================
-              RIGHT BOX: SEND A MESSAGE
-          ================================================== */}
-          <div className="bg-card p-8 rounded-lg shadow-xs">
+          {/* ---------- SEND MESSAGE ---------- */}
+          <div className="bg-card p-8 rounded-2xl shadow-xs border border-border/50">
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-            <form onSubmit={onSubmit} className="space-y-6">
-              {/* ---------- Name ---------- */}
+            <form onSubmit={onSubmit} className="space-y-5">
+              {/* Name */}
               <div>
                 <label
                   htmlFor="name"
@@ -191,12 +215,13 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-                  placeholder="Chirag..."
+                  autoComplete="name"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition"
+                  placeholder="Enter your name"
                 />
               </div>
 
-              {/* ---------- Email ---------- */}
+              {/* Email */}
               <div>
                 <label
                   htmlFor="email"
@@ -210,12 +235,13 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-                  placeholder="chirag@gmail.com"
+                  autoComplete="email"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition"
+                  placeholder="Enter your email"
                 />
               </div>
 
-              {/* ---------- Message ---------- */}
+              {/* Message */}
               <div>
                 <label
                   htmlFor="message"
@@ -228,13 +254,13 @@ export const ContactSection = () => {
                   id="message"
                   name="message"
                   required
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  rows={5}
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition resize-none"
+                  placeholder="Tell me about your project or opportunity..."
                 />
               </div>
 
-              {/* ---------- Submit ---------- */}
+              {/* Submit */}
               <button
                 type="submit"
                 disabled={loading}
