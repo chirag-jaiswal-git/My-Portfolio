@@ -103,45 +103,55 @@ export const ContactSection = () => {
 
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         {/* ---------- SECTION HEADER ---------- */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Get In <span className="text-primary">Touch</span>
           </h2>
 
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind, want to collaborate, or simply want to
-            connect? Feel free to reach out. I'm always open to discussing new
-            opportunities and ideas.
+          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Have a project in mind, an internship opportunity, or just want to
+            connect? Feel free to reach out. I'd love to hear from you.
           </p>
         </div>
 
         {/* ---------- MAIN CONTENT ---------- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {/* ---------- CONTACT INFORMATION ---------- */}
-          <div className="bg-card p-8 rounded-2xl shadow-xs border border-border/50">
+          <div className="bg-card p-8 md:p-10 rounded-2xl border border-border/50 shadow-xs">
             <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
 
-            <div className="space-y-6">
-              {contactDetails.map((detail, index) => {
+            {/* Contact Details */}
+            <div className="space-y-7">
+              {contactDetails.map((detail) => {
                 const Icon = detail.icon;
 
                 return (
-                  <div key={index} className="flex items-center gap-4">
+                  <div
+                    key={detail.title}
+                    className="flex items-center gap-4 group"
+                  >
                     {/* Icon */}
-                    <div className="p-3 rounded-full bg-primary/10 text-primary shrink-0">
+                    <div
+                      className="p-3 rounded-full bg-primary/10 text-primary
+                      shrink-0 transition-all duration-300
+                      group-hover:bg-primary group-hover:text-primary-foreground
+                      group-hover:scale-105"
+                    >
                       <Icon className="h-5 w-5" />
                     </div>
 
-                    {/* Details */}
+                    {/* Information */}
                     <div className="min-w-0">
                       <h4 className="font-medium mb-1">{detail.title}</h4>
 
                       {detail.href ? (
                         <a
                           href={detail.href}
-                          className="text-sm text-muted-foreground hover:text-primary transition-colors break-all"
+                          className="text-sm text-muted-foreground
+                          hover:text-primary transition-colors
+                          break-all"
                         >
                           {detail.value}
                         </a>
@@ -156,28 +166,28 @@ export const ContactSection = () => {
               })}
             </div>
 
-            {/* ---------- DIVIDER ---------- */}
-            <div className="border-t border-border my-8" />
+            {/* Divider */}
+            <div className="border-t border-border my-9" />
 
             {/* ---------- SOCIAL LINKS ---------- */}
             <div>
               <h4 className="font-medium mb-5">Connect With Me</h4>
 
               <div className="flex gap-4">
-                {socialLinks.map((social, index) => {
+                {socialLinks.map((social) => {
                   const Icon = social.icon;
 
                   return (
                     <a
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Visit my ${social.name} profile`}
-                      title={social.name}
-                      className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
-                    >
-                      <Icon className="h-5 w-5" />
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={"Visit my " + social.name + " profile"}
+                    title={social.name}
+                    className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300"
+                  >
+                    <Icon className="h-5 w-5" />
                     </a>
                   );
                 })}
@@ -185,20 +195,35 @@ export const ContactSection = () => {
             </div>
 
             {/* ---------- AVAILABILITY ---------- */}
-            <div className="mt-8 p-4 rounded-lg bg-primary/5 border border-primary/10">
-              <p className="text-sm text-muted-foreground">
-                <span className="text-primary font-medium">
-                  Open to opportunities
-                </span>{" "}
-                — internships, freelance projects, and full-stack development
-                roles.
-              </p>
+            <div
+              className="mt-9 p-5 rounded-xl
+              bg-primary/5 border border-primary/10"
+            >
+              <div className="flex items-start gap-3">
+                <div className="mt-1 h-2.5 w-2.5 rounded-full bg-primary animate-pulse shrink-0" />
+
+                <div>
+                  <p className="font-medium text-sm mb-1">
+                    Open to opportunities
+                  </p>
+
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Currently open to internships, freelance projects, and
+                    full-stack development opportunities.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* ---------- SEND MESSAGE ---------- */}
-          <div className="bg-card p-8 rounded-2xl shadow-xs border border-border/50">
-            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+          <div className="bg-card p-8 md:p-10 rounded-2xl border border-border/50 shadow-xs">
+            <h3 className="text-2xl font-semibold mb-2">Send a Message</h3>
+
+            <p className="text-sm text-muted-foreground mb-7">
+              Fill out the form below and I'll get back to you as soon as
+              possible.
+            </p>
 
             <form onSubmit={onSubmit} className="space-y-5">
               {/* Name */}
@@ -216,8 +241,13 @@ export const ContactSection = () => {
                   name="name"
                   required
                   autoComplete="name"
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition"
                   placeholder="Enter your name"
+                  className="w-full px-4 py-3 rounded-lg
+                  border border-input bg-background
+                  focus-visible:outline-none
+                  focus-visible:ring-2
+                  focus-visible:ring-primary
+                  transition-all duration-200"
                 />
               </div>
 
@@ -236,8 +266,13 @@ export const ContactSection = () => {
                   name="email"
                   required
                   autoComplete="email"
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition"
                   placeholder="Enter your email"
+                  className="w-full px-4 py-3 rounded-lg
+                  border border-input bg-background
+                  focus-visible:outline-none
+                  focus-visible:ring-2
+                  focus-visible:ring-primary
+                  transition-all duration-200"
                 />
               </div>
 
@@ -254,24 +289,31 @@ export const ContactSection = () => {
                   id="message"
                   name="message"
                   required
-                  rows={5}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition resize-none"
+                  rows={6}
                   placeholder="Tell me about your project or opportunity..."
+                  className="w-full px-4 py-3 rounded-lg
+                  border border-input bg-background
+                  focus-visible:outline-none
+                  focus-visible:ring-2
+                  focus-visible:ring-primary
+                  transition-all duration-200
+                  resize-none"
                 />
               </div>
 
-              {/* Submit */}
+              {/* Submit Button */}
               <button
                 type="submit"
                 disabled={loading}
                 className={cn(
                   "cosmic-button w-full flex items-center justify-center gap-2",
                   "disabled:cursor-not-allowed disabled:opacity-60",
+                  "transition-all duration-300",
                 )}
               >
                 {loading ? "Sending..." : "Send Message"}
 
-                <Send size={16} />
+                <Send size={16} className={loading ? "animate-pulse" : ""} />
               </button>
             </form>
           </div>
