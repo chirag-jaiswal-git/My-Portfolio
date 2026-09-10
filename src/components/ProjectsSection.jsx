@@ -21,7 +21,7 @@ const projects = [
       "Tailwind CSS",
     ],
     demoUrl: "#",
-    githubUrl: "https://github.com/chirag-jaiswal-git",
+    githubUrl: "https://github.com/chirag-jaiswal-git/BookMyTurf",
   },
 
   {
@@ -39,7 +39,7 @@ const projects = [
       "Tailwind CSS",
     ],
     demoUrl: "https://forever-store-app.vercel.app/",
-    githubUrl: "https://github.com/chirag-jaiswal-git",
+    githubUrl: "https://github.com/chirag-jaiswal-git/Forever-Ecommerce-WebApp",
   },
 ];
 
