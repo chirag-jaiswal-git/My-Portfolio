@@ -9,7 +9,8 @@ const projects = [
     id: 1,
     title: "BookMyTurf - Turf Booking Platform",
     description:
-      "Full-stack turf booking platform with passwordless OTP authentication, venue booking, admin management, refund workflows, and real-time booking notifications.",
+     "Full-stack turf booking platform with secure user authentication, venue discovery and booking, admin management, booking cancellation, and real-time booking notifications,",
+
     image: img,
     tags: [
       "React.js",
@@ -20,7 +21,7 @@ const projects = [
       "Socket.IO",
       "Tailwind CSS",
     ],
-    demoUrl: "#",
+    demoUrl: "https://book-my-turf-jta8.vercel.app/",
     githubUrl: "https://github.com/chirag-jaiswal-git/BookMyTurf",
   },
 
